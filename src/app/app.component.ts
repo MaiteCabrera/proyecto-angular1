@@ -1,6 +1,25 @@
 import { Component } from '@angular/core';
 
 @Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  fruta: string = 'manzana';
+  verdura: string = 'lechuga';
+  pi: number = 3.14159265359;
+  ciudad = {
+    nombre: 'Bahía Blanca',
+    poblacion: 284776
+  };
+  helloWorld = () => {
+    return "Hola mundo!"
+  }
+}
+
+/*
+@Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
@@ -8,6 +27,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'proyecto-angular1';
 }
+*/
 /*
 Un controlador o Controller: 
 Es dónde se encuentra la lógica, este archivo incluye una clase 
